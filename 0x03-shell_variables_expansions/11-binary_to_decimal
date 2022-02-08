@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ($BINARY (ibase=2; obase=10))
+echo $(([BINARY]#[10]))  
