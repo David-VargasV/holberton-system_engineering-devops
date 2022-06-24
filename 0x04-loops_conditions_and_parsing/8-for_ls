@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Write a Bash script that displays the contents of the current directory
+# Bash script that displays the contents of the current directory
 
-for x in *;
+for x in *
 do
     echo "$x" | cut -d "-" -f2
 done
