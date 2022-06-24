@@ -1,1 +1,17 @@
 #!/usr/bin/env bash
+# Bash script that loops from 1 to 10 and displays messages
+
+x=0
+while ((x <= 10));
+do
+    if ((x == 4));
+    then
+        echo "bad luck"
+    elif ((x == 8));
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    ((x++));
+done
