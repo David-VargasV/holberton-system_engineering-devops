@@ -10,7 +10,8 @@ from sys import argv
 if __name__ == '__main__':
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(argv[1]), verify=False).json()
-    todo = requests.get(url + "todos", params={"userId": argv[1]}).json()
+    todo = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
+                        format(argv[1]), verify=False).json()
 
     completed = []
     for task in todo:
