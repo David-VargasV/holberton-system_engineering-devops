@@ -9,7 +9,7 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """ """
+    """ Function that returns the number of subscribers """
     url = 'https://www.reddit.com/r/{}.json'.format(subreddit)
     user = 'reddit_user'
     headers = {'User-Agent': user}
