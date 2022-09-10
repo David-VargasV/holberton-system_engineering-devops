@@ -3,8 +3,7 @@
 How many subscribers?
 """
 
-import imp
-from wsgiref import headers
+import json
 import requests
 
 
